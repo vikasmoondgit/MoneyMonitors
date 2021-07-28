@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Money Monitors </title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@moneymonitors.in">info@moneymonitors.in</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:+918107327822">8107327822</a></i>
+      </div>
+
+      <div class="cta d-none d-md-flex align-items-center">
+        <a href="#services" class="scrollto">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Investments</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" target="_blank">Overview</a></li>
+              <li><a href="#" target="_blank">Markets</a></li>
+              <li><a href="#" target="_blank">Stocks</a></li>
+              <li><a href="#" target="_blank">US Stocks</a></li>
+              <li><a href="#" target="_blank">Mutual Funds</a></li>
+              <li><a href="#" target="_blank">Fixed Deposit</a></li>
+              <li><a href="#" target="_blank">Bonds</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Loans</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#" target="_blank">New Home Loan</a></li>
+              <li><a href="#" target="_blank">Loan Against Property</a></li>
+              <li><a href="#" target="_blank">On Demand Credit Loan</a></li>
+              <li><a href="#" target="_blank">Loan for Commercial Property</a></li>
+              <li><a href="#" target="_blank">Personal Loan</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Insurance</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" target="_blank">Life Insurance</a></li>
+              <li><a href="#" target="_blank">Health Insurance</a></li>
+              <li><a href="#" target="_blank">Car Insurance</a></li>
+              <li><a href="#" target="_blank">Two Wheeler</a></li>
+              <!-- <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li> -->
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Learn</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" target="_blank">Stock Market</a></li>
+              <li><a href="#" target="_blank">Personal Finance</a></li>
+              <li><a href="#" target="_blank">Entrepreneurship</a></li>
+              <!-- <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li> -->
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Calculators</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Calculator.html" target="_blank">FD Calculator</a></li>
+              <li><a href="Calculator.html" target="_blank">Loan Deferment Calculator</a></li>
+              <li><a href="Calculator.html" target="_blank">Credit Card Deferment Calculator</a></li>
+              <!-- <li><a href="#" target="_blank">Drop Down 4</a></li>
+              <li><a href="#" target="_blank">Drop Down 2</a></li>
+              <li><a href="#" target="_blank">Drop Down 3</a></li>
+              <li><a href="#" target="_blank">Drop Down 4</a></li> -->
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto calculate-form">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Calculator</h1>
+            <form id="loan-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">₹</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="amount"
+                    placeholder="Amount"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">%</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="interest"
+                    placeholder="Interest"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="years"
+                  class="form-control"
+                  placeholder="Years To Repay"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Calculate"
+                  class="btn btn-dark btn-block"
+                />
+              </div>
+            </form>
+            <!-- Loader -->
+            <div id="loading">
+              <img src="assets/img/money.gif" alt="loading"/>
+            </div>
+            <!-- Result -->
+            <div id="result">
+              <h5 style="color: #f9bb5d;">Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Monthly Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="monthly-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Interest</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="total-interest"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script  src="Calculator.js"></script>
+
+</body>
+</html>
